@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
     vendor/aosip/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
+# Backup services whitelist
+PRODUCT_COPY_FILES += \
+    vendor/aosip/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+	
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
