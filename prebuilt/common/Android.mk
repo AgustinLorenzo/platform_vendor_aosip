@@ -1,0 +1,12 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := AgustindevStats
+LOCAL_MODULE_OWNER := agustindev
+LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)

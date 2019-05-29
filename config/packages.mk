@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
     TurboPrebuilt \
     WeatherClient \
     WellbeingPrebuilt \
-    Updater
+    Updater \
+	AgustindevStats
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
