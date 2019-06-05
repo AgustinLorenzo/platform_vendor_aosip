@@ -50,10 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
     vendor/aosip/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-# Backup services whitelist
-PRODUCT_COPY_FILES += \
-    vendor/aosip/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
-	
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
@@ -80,7 +76,8 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml \
     vendor/aosip/prebuilt/common/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml \
     vendor/aosip/prebuilt/common/etc/sysconfig/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
-    vendor/aosip/prebuilt/common/etc/sysconfig/org.pixelexperience.weather.client-default.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
+    vendor/aosip/prebuilt/common/etc/sysconfig/org.pixelexperience.weather.client-default.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml \
+	vendor/aosip/prebuilt/common/etc/sysconfig/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
 # Google Assistant
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
